@@ -38,7 +38,7 @@ df_2009_2010 = df_2009_2010[columns_order_2009_2010]
 columns_order_2010_2011 = ['Invoice', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'Price', 
                  'Customer ID', 'Country', 'Revenue', 'Frequency']
 df_2010_2011 = df_2010_2011[columns_order_2010_2011]
-output_file = "cleaned_online_retail_II.xlsx"
+output_file = "fixed_online_retail_II.xlsx"
 with pd.ExcelWriter(output_file, engine='openpyxl', mode='a') as writer:
     # Lưu sheet 'Year 2009-2010'
     df_2009_2010.to_excel(writer, sheet_name='Year 2009-2010', index=False)
